@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from bs4 import BeautifulSoup
 import requests
 import json
@@ -36,8 +38,8 @@ def main(words_data):
         return(words_data)
 
 __author__ = 'Alexander Popov'
-__license__ = "Public Domain"
-__version__ = "1.0.0"
+__license__ = "MIT"
+__version__ = "1.0.1"
 __email__ = "iiiypuk@fastmail.fm"
 
 if __name__ == '__main__':
@@ -53,3 +55,4 @@ if __name__ == '__main__':
                 json.dumps(words, indent=4, ensure_ascii=False))
 
             print('Saved %d words.' % len(words))
+
